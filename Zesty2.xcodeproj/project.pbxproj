@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B9E4EF909F7D1EF2A76F5B6 /* Pods_Zesty2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30C4BF3F8CE3E63A4B8A8905 /* Pods_Zesty2.framework */; };
 		C7BE4C842B7C34150020A7DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BE4C832B7C34150020A7DF /* AppDelegate.swift */; };
 		C7BE4C862B7C34150020A7DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BE4C852B7C34150020A7DF /* SceneDelegate.swift */; };
 		C7BE4C882B7C34150020A7DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BE4C872B7C34150020A7DF /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D9BF9A75F5B297CB26EDA5D /* Pods-Zesty2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zesty2.release.xcconfig"; path = "Target Support Files/Pods-Zesty2/Pods-Zesty2.release.xcconfig"; sourceTree = "<group>"; };
+		30C4BF3F8CE3E63A4B8A8905 /* Pods_Zesty2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zesty2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7BE4C802B7C34150020A7DF /* Zesty2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zesty2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7BE4C832B7C34150020A7DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7BE4C852B7C34150020A7DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		C7BE4C8C2B7C34170020A7DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7BE4C8F2B7C34170020A7DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C7BE4C912B7C34170020A7DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE99711A948214C2104BAA59 /* Pods-Zesty2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zesty2.debug.xcconfig"; path = "Target Support Files/Pods-Zesty2/Pods-Zesty2.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B9E4EF909F7D1EF2A76F5B6 /* Pods_Zesty2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A7A245E3F0825AE86341907 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CE99711A948214C2104BAA59 /* Pods-Zesty2.debug.xcconfig */,
+				2D9BF9A75F5B297CB26EDA5D /* Pods-Zesty2.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5B82698B02D82BB3E070D4CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				30C4BF3F8CE3E63A4B8A8905 /* Pods_Zesty2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C7BE4C772B7C34150020A7DF = {
 			isa = PBXGroup;
 			children = (
 				C7BE4C822B7C34150020A7DF /* Zesty2 */,
 				C7BE4C812B7C34150020A7DF /* Products */,
+				1A7A245E3F0825AE86341907 /* Pods */,
+				5B82698B02D82BB3E070D4CF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C7BE4C942B7C34170020A7DF /* Build configuration list for PBXNativeTarget "Zesty2" */;
 			buildPhases = (
+				FE20B17326F3755CB1D0F167 /* [CP] Check Pods Manifest.lock */,
 				C7BE4C7C2B7C34150020A7DF /* Sources */,
 				C7BE4C7D2B7C34150020A7DF /* Frameworks */,
 				C7BE4C7E2B7C34150020A7DF /* Resources */,
+				87661DC7B6E008CCCCDAEACA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		87661DC7B6E008CCCCDAEACA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Zesty2/Pods-Zesty2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Zesty2/Pods-Zesty2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Zesty2/Pods-Zesty2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE20B17326F3755CB1D0F167 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Zesty2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C7BE4C7C2B7C34150020A7DF /* Sources */ = {
@@ -203,7 +271,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -266,7 +334,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -287,6 +355,7 @@
 		};
 		C7BE4C952B7C34170020A7DF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE99711A948214C2104BAA59 /* Pods-Zesty2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -315,6 +384,7 @@
 		};
 		C7BE4C962B7C34170020A7DF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D9BF9A75F5B297CB26EDA5D /* Pods-Zesty2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

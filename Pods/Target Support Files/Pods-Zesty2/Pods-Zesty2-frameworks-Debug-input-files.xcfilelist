@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-Zesty2/Pods-Zesty2-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework
+${BUILT_PRODUCTS_DIR}/ZestySwiftContentEndpointWrapper/ZestySwiftContentEndpointWrapper.framework
